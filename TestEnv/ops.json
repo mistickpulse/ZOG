@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "fb4cdad9-642b-358f-8f6f-717981c9f42b",
+    "name": "user1",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "69a64218-b4ee-3158-ac86-3bbe8f68002b",
+    "name": "GodFroy",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "5ad63e12-f704-4ae3-8eff-6169230c9d2e",
+    "name": "mistickpulse",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "edf291db-6906-3c28-8aab-a8572b2f4fb6",
+    "name": "mistickpulse",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

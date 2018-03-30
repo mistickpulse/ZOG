@@ -1,0 +1,78 @@
+main: ZEventManager.ZEventManager
+name: ZEvent
+version: 1.0-SnapShot
+author: zouz
+description: A Plugin Made To manage Event Which can be Defined and Planned On this file.
+
+permissions:
+  ZEvent.*:
+    description: Give all Access To the ZEvent command
+    default: op
+    children:
+      ZEvent.acessEvent: true
+      ZEvemt.modifyEvent: true
+
+  ZEvent.acessEvent:
+      description: Give the Acess to an Event Registering
+      default: false
+  ZEvent.modifyEvent:
+      description: Allow the user to modify an event
+      defautl: false
+
+commands:
+  ZEvent:
+    description: Allow you to access to All ZEvent Commands. do /ZEvent help
+    usage: /<command> help
+    aliases: [zevt]
+
+events:
+  names:
+    - fillbucket
+    - playerKill
+  data:
+    fillbucket:
+      triggers:
+        - OnFillBucket
+      time:
+        - 10
+        - 15
+        - 10
+
+      date:
+        - 05 13h10
+        - 06 15h00
+      broadcast: Some Event Description when the event start
+      description: Some description about the event (see when use /ZEvent desc)
+      rewards:
+        names:
+          - first
+          - second
+          - third
+
+        first:
+          - give @p minecraft:diamond 10
+          - give @p minecraft:diamond_sword
+
+        second:
+          - give @p minecraft:golden_ingot 3
+
+        third:
+          - give @p minecraft:dirt 64
+
+    playerKill:
+      triggers:
+        - OnPlayerKill
+      time:
+        - 10
+        - 15
+        - 10
+      date:
+      - 05 14h00
+      - 05 15h00
+      broadcast: Some Event broadcast
+      description: some Description
+      rewards:
+        names:
+          - first
+        first:
+          - give @p minecraft:book 64

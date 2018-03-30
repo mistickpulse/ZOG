@@ -1,0 +1,34 @@
+{
+  "stat.walkOneCm": 392167,
+  "achievement.openInventory": 9,
+  "stat.leaveGame": 66,
+  "stat.damageTaken": 210,
+  "stat.useItem.minecraft.bucket": 199,
+  "stat.useItem.minecraft.potion": 8,
+  "stat.flyOneCm": 238463,
+  "stat.deaths": 1,
+  "stat.drop": 55,
+  "stat.jump": 936,
+  "stat.swimOneCm": 3533,
+  "stat.playOneMinute": 1263293,
+  "stat.fallOneCm": 1899,
+  "stat.climbOneCm": 784,
+  "stat.entityKilledBy.Skeleton": 1,
+  "stat.crouchOneCm": 630,
+  "stat.timeSinceDeath": 51030,
+  "stat.useItem.minecraft.dirt": 198,
+  "stat.sprintOneCm": 183393,
+  "stat.mineBlock.minecraft.dirt": 5,
+  "achievement.exploreAllBiomes": {
+    "value": 0,
+    "progress": [
+      "Extreme Hills+",
+      "River",
+      "Forest",
+      "Extreme Hills",
+      "Swampland"
+    ]
+  },
+  "stat.diveOneCm": 1161,
+  "stat.useItem.minecraft.water_bucket": 146
+}

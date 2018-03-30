@@ -1,0 +1,69 @@
+{
+    {
+        "name":"TestEvent",
+        //Nom de l'evenement
+
+        "TrigeredEvent":
+        [
+            "OnMobKill":"+20",
+            "OnPlayerKIll":"-10",
+            "OnDeath":"RESET",
+
+            //Ici tout les Event qui doivent etre Trigger pendant l'evenement (Tout les events acceptes par le jeu
+            //qui ont ete implem par moi)
+            //Le champ a droite represente l'impact sur le score, Recois les 4 operations mathematiques de base (+-*/)
+            //Reset = remise a zero
+        ],
+
+        "Time":"Infinite|Duration",
+        //Timer en mode infini ou en mode normal (Permet que l'evenement continue jusqu'a ce qu'un joueur att
+        //atteigne le score max
+        //Remplacer Duration par la duree de l'evenement (Duree en Seconde)
+
+
+        "ScoreMax":"Infinite|Qte",
+        //Si score max = Infinite on se base sur la limite de temps pour arretter l'event
+        //Si il n'y a pas de limite de temps alors on met un score max
+
+        "PlanOn":["01:1h48", "01:3h48"]
+        //Date de l'evenement format :["Date":"Heure"h"min"]
+        "BroadCastMessage":"Message To say Before the Event",
+        "PreTimer":"15"(min)
+        "RepeatEach":"3"//Le message BroadCast se repete toutes les 3 min
+
+        "Rewards":[
+            ["a commands", "another command"],
+            ["same", "same"]
+        ]
+
+        //Les loots destine aux joueurs, Dans l'ordre allant du joueur au score le plus haut a celui le plus bas
+        // Loot configurable, et permet un nombre de joueur desire a la selection
+        // les Commandes laisse la possibilite de donne n'importe quoi au joueur et non pas seulement des items.
+        // Mais aussi des items Pimpes et n'importe quoi d'autre (Comme faire pop des feux d'artifice lors de la remise
+        // des recompenses par exemple)
+        // @p represente le nom du joueur
+    }
+
+
+//============= Exemple ==============
+    {
+        "name":"BattleRoyal",
+        "TrigeredEvent":[
+            "OnPlayerKill":"+1";
+            "OnMobKill":"/2";
+            "OnHit":"-1";
+            "OnDeath": RESET
+        ],
+        "Time":"600",// 10 minutes
+        "ScoreMax":"Infinite",
+        "PlanOn":["03:1h00"], // Arrivera le 03 de chaque mois a 1h00
+        "BroadCastMessage":"Some Info"
+        "PreTimer":"15",
+        "RepatEach":"1",
+        "Reward":[
+            ["give @p minecraft:diamond 10", "give @p minecraft:sword"], // Joueur Premier
+            ["give @p minecraft:gold_ingot 10"] // Joueur Deuxieme
+            //etc pour le nombre de joueur Voulu
+        ]
+    }
+}
